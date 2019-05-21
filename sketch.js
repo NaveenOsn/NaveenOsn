@@ -20,7 +20,7 @@ var po  = 0;
 if (gameOver == false) {
   function setup() {
     backgroundimg = loadImage("Images/background.jpg");
-    createCanvas(600, 350);
+    createCanvas(600, 400);
     ship = new Ship();
     for (let j = 0; j < 3; j++) {
       for (let i = 0; i < 7; i++) {
