@@ -125,7 +125,7 @@ if (gameOver == false) {
         gameOver = false;
         h = 0;
         velocity = 1;
-       po = -100;
+       po = 0;
       }
     }
   }
