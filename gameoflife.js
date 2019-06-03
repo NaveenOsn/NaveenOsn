@@ -11,7 +11,7 @@ function setup() {
         var alive = (Math.random() < chanceOfLife)
         isAlive.push(alive)
     }
-    frameRate(30)
+    frameRate(10)
 }
 
 function draw() {
