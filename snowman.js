@@ -1,4 +1,4 @@
-let snowflakes = []; // array to hold snowflake objects
+var snowflakes = []; // array to hold snowflake objects
 function setup() {
     createCanvas(400, 400);
 }
