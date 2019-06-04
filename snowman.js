@@ -60,7 +60,7 @@ function draw() {
     rect(0,350,400,100);
 
 
-    let t = frameCount / 60; // update time
+    var t = frameCount / 60; // update time
 
     // create a random number of snowflakes each frame
     for (var i = 0; i < random(5); i++) {
@@ -68,7 +68,7 @@ function draw() {
     }
 
     // loop through snowflakes with a for..of loop
-    for (let flake of snowflakes) {
+    for (var flake of snowflakes) {
         flake.update(t); // update snowflake position
         flake.display(); // draw snowflake
     }
@@ -88,8 +88,8 @@ function snowflake() {
 
     this.update = function(time) {
         // x position follows a circle
-        let w = 0.6; // angular speed
-        let angle = w * time + this.initialangle;
+        var w = 0.6; // angular speed
+        var angle = w * time + this.initialangle;
         this.posX = width / 2 + this.radius * sin(angle);
 
         // different size snowflakes fall at slightly different y speeds
