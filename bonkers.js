@@ -1,11 +1,11 @@
-let bubbles = [];
+var bubbles = [];
 function setup() {
     createCanvas(600, 400);
     colorMode(HSB,100);
 }
 function draw() {
     //background(0);
-    for (let i = 0; i < bubbles.length; i++) {
+    for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].move();
         bubbles[i].display();
         bubbles[i].bounce();
