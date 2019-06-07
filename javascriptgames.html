@@ -34,7 +34,10 @@
         .active {
             background-color: #4CAF50;
         }
+
     </style>
+
+
 </head>
 <body>
 
@@ -44,14 +47,62 @@
     <li><a href="about.html">About</a></li>
 
 </ul>
-<p><a href="spaceInvaders.html">Space Invaders</a></p>
-<p><a href="overlapping.html">Overlapping</a></p>
-<p><a href="gameoflife.html">Game Of Life</a></p>
-<p><a href="snowman.html">Snowman</a></p>
-<!--<p><a href="rollover.html">Rollover</a></p>-->
-<p><a href="twitch.html">Twitch</a></p>
-<p><a href="bonkers.html">Bonkers</a></p>
-<p><a href="bounce.html">Bounce</a></p>
+
 
 </body>
+<style>
+    .dropbtn {
+        background-color: #161616;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #9fa3a0;
+    }
+</style>
+</head>
+<div class="dropdown">
+    <button class="dropbtn">Projects</button>
+    <div class="dropdown-content">
+        <a href="spaceInvaders.html">Space Invaders</a>
+        <a href="overlapping.html">Overlapping</a>
+        <a href="gameoflife.html">Game Of Life</a>
+        <a href="snowman.html">Snowman</a>
+        <!--<a href="rollover.html">Rollover</a>-->
+        <a href="twitch.html">Twitch</a>
+        <a href="bonkers.html">Bonkers</a>
+        <a href="bounce.html">Bounce</a>
+    </div>
+</div>
 </html>
